@@ -1,0 +1,28 @@
+extends ../layout
+
+block content
+    h1 Login
+    form(action="/users/register", method="POST")
+        // Username
+        div.form-outline.mb-4
+            label(for="username").form-label Username:
+            input(type="text", id="username", name="username", placeholder="Username").form-control
+
+        // Full Name
+        div.form-outline.mb-4
+            label(for="name").form-label Full Name::
+            input(type="text", id="name", name="name", placeholder="Full Name").form-control
+
+        // Email
+        div.form-outline.mb-4
+            label(for="email").form-label Email:
+            input(type="email", id="email", name="email", placeholder="Email").form-control
+
+        // Password
+        div.form-outline.mb-4
+            label(for="password").form-label Password:
+            input(type="password", id="password", name="password", placeholder="Password").form-control
+
+        // Buttons
+        button(type="submit").btn.btn-primary.btn-block.mb-4 Register
+

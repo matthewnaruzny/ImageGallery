@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+    h1 Login
+    form(action="/users/login", method="POST")
+        // Username
+        div.form-outline.mb-4
+            label(for="usernameField").form-label Username:
+            input(type="text", id="usernameField", placeholder="Username").form-control
+
+        // Password
+        div.form-outline.mb-4
+            label(for="passwordField").form-label Password:
+            input(type="password", id="passwordField", placeholder="Password").form-control
+
+        // Buttons
+        button(type="submit").btn.btn-primary.btn-block.mb-4 Sign In
+
+        div.text-center
+            p Not a member?
+                a(href="#") Register
